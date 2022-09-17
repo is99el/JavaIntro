@@ -8,12 +8,12 @@ size(800,800);
 
 void draw(){
   //background(0,200,255);
- boom();
+ boom(100,100);
   
 }
 
 
-void boom(){
+void boom(int x, int y){
   fill(165,42,42);
   rect(250,300,100,400);
   noFill();
