@@ -17,39 +17,54 @@ Button knop2;
 
 
 
+
+
+
 void setup() {
   size(800, 800);
   background(100, 100, 100);
-
-
-
+  
 
   cp = new ControlP5(this);
+  
 
 
 
   //knopstudenten
   knop1 = cp.addButton("knop1");
   knop1.setCaptionLabel("Studenten");
+  knop1.setColorForeground(color(0,0,0));
 
    //knopouders
   knop2 = cp.addButton("knop2");
   knop2.setCaptionLabel("Ouders");
+  knop2.setColorForeground(color(0,0,0));
+
+  
+
+  
+
+  
+  
+
 }
+
+ 
 
 
 
 void draw() {
-
   totaal=teller+teller1;
-  text(totaal, 10, 200);
-  textSize(100);
-  
+  text(totaal,200,100);
+  textSize(60);
 
-
- 
 }
+   
+    
+    
+    
 
+  
 
 
 void knop1() {
@@ -64,3 +79,14 @@ void knop2() {
   teller1++;
   println("ouders:"+teller1);
 }
+
+
+void totaal(){
+ 
+  
+  totaal=teller+teller1;
+  
+  
+}
+
+  
