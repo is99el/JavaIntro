@@ -54,9 +54,13 @@ void setup() {
 
 
 void draw() {
+   background(100, 100, 100);
   totaal=teller+teller1;
-  text(totaal,200,100);
-  textSize(60);
+  
+  textSize(20);
+  text("totaal= "+totaal,100,200);
+  text("totaal ouders= "+teller1,500,200);
+  text("totaal studenten= "+teller,300,500);
 
 }
    
@@ -79,14 +83,3 @@ void knop2() {
   teller1++;
   println("ouders:"+teller1);
 }
-
-
-void totaal(){
- 
-  
-  totaal=teller+teller1;
-  
-  
-}
-
-  
