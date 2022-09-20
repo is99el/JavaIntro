@@ -1,6 +1,6 @@
 String naam= "Jan";
 Boolean gevonden=false;
-String[]namen={"Ismael","Jan","Burak","Mo"};
+String[]namen={"Ismael","Jan","Casper","Mo"};
 
 void setup(){
 for(int i=0; i < namen.length; i++){
@@ -10,6 +10,6 @@ for(int i=0; i < namen.length; i++){
 
 }
 if(gevonden){
-  println("Je naam is= "+ naam);
+  println("Je naam is  "+ naam);
 }
 }
