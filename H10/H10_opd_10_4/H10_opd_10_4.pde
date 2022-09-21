@@ -22,7 +22,7 @@ Button knop2;
 
 void setup() {
   size(800, 800);
-  background(100, 100, 100);
+  //background(100, 100, 100);
   
 
   cp = new ControlP5(this);

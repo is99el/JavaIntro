@@ -1,3 +1,10 @@
+int a;
+int b;
+int totaal;
+String mijnString;
+String mijnString1;
+
+
 import controlP5.*;
 ControlP5 cp;
 
@@ -75,6 +82,88 @@ tekstveld2= cp
 
 
 void draw(){
+
+
+
+
+}
+
+
+void Keer(){
+ mijnString1=tekstveld1.getText();
+ mijnString=tekstveld2.getText();
+  
+ a=int(tekstveld1.getText());
+ b=int(tekstveld2.getText());
+ 
+ totaal=a*b;
+ 
+  
+  
+  text(totaal,100,100);
+  println(totaal);
+
+
+
+
+}
+
+
+void Gedeeld(){
+ mijnString1=tekstveld1.getText();
+ mijnString=tekstveld2.getText();
+  
+ a=int(tekstveld2.getText());
+ b=int(tekstveld1.getText());
+ 
+ totaal=a/b;
+ 
+  
+  
+  text(totaal,100,100);
+  println(totaal);
+
+
+
+
+}
+
+
+
+void Plus(){
+ mijnString1=tekstveld1.getText();
+ mijnString=tekstveld2.getText();
+  
+ a=int(tekstveld1.getText());
+ b=int(tekstveld2.getText());
+ 
+ totaal=a+b;
+ 
+  
+  
+  text(totaal,100,100);
+  println(totaal);
+
+
+
+
+}
+
+
+
+void Minn(){
+ mijnString1=tekstveld1.getText();
+ mijnString=tekstveld2.getText();
+  
+ a=int(tekstveld2.getText());
+ b=int(tekstveld1.getText());
+ 
+ totaal=a-b;
+ 
+  
+  
+  text(totaal,100,100);
+  println(totaal);
 
 
 
