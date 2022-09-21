@@ -1,5 +1,8 @@
-String[]namen={"mo1", "mo2", "issi", "mo3", "mo4", "mo5", "mo6", "mo7", "mo8", "mo9"};
+String[]namen={};
 int totaalKnop;
+boolean scherm=false;
+
+
 
 import controlP5.*;
 
@@ -10,8 +13,8 @@ Button knop1;
 Textfield tekstveld1;
 
 void setup() {
+  
   size(500, 500);
-  background(100, 100, 100);
   cp = new ControlP5(this);
 
   knop1 = cp.addButton("Knop1")
@@ -19,6 +22,7 @@ void setup() {
   
 
   knop1.setCaptionLabel("Enter");
+
 
   tekstveld1 = cp
     .addTextfield("TextInput1")
@@ -29,19 +33,37 @@ void setup() {
     .setColorLabel(color(255, 0, 0))
     .setAutoClear(false);
     
+   
     
-    println(namen);
+    
+    
     
     
 }
 
 
 void draw() {
+   background(100, 100, 100);
+   
+  text("totaal= "+ totaalKnop,100,100);
+  
+   
+     }
+ 
+  
+ 
+
+
+void scherm(){
+  
+  for(int i=0; i<10 ;i++){
+    
+     
+       scherm=true;
+
+println(namen);
+ 
+ 
 
 }
-
-
-void Knop1() {
- totaalKnop=10;
-  println("nieuwe naam " + tekstveld1.getText());
 }
