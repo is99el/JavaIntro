@@ -1,4 +1,4 @@
-String[]namen={};
+String[]namen= new String[10];
 int totaalKnop;
 String a;
 boolean knop=false;
@@ -44,9 +44,7 @@ void setup() {
 
 
 void draw() {
-   background(100, 100, 100);
-   
-  //text("totaal= "+ totaalKnop,100,100);
+  
   
    
      }
@@ -55,15 +53,25 @@ void draw() {
  
 
 
-void Knop(){
+void Knop1(){
   a=tekstveld1.getText();
   namen[totaalKnop]=a;
   totaalKnop++;
   
+ if(totaalKnop==10){
  
+   
+   for(int i=0; i<=10; i++){
+  
+  
+  println(namen[i]);
+ textSize(10);
+  text("Dit zijn alle namen: "+namen[i],50,150+i*10);
+  
+ }
 
-  println(a);
-
+  
  
-
+ 
+}
 }
