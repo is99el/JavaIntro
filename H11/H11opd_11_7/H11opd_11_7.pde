@@ -1,6 +1,7 @@
 String[]namen={};
 int totaalKnop;
-boolean scherm=false;
+String a;
+boolean knop=false;
 
 
 
@@ -30,8 +31,8 @@ void setup() {
     .setText("")
     .setSize(150,20)
     .setCaptionLabel("Type een naam!")
-    .setColorLabel(color(255, 0, 0))
-    .setAutoClear(false);
+    .setColorLabel(color(255, 0, 0));
+    //.setAutoClear(false);
     
    
     
@@ -45,7 +46,7 @@ void setup() {
 void draw() {
    background(100, 100, 100);
    
-  text("totaal= "+ totaalKnop,100,100);
+  //text("totaal= "+ totaalKnop,100,100);
   
    
      }
@@ -54,16 +55,15 @@ void draw() {
  
 
 
-void scherm(){
+void Knop(){
+  a=tekstveld1.getText();
+  namen[totaalKnop]=a;
+  totaalKnop++;
   
-  for(int i=0; i<10 ;i++){
-    
-     
-       scherm=true;
-
-println(namen);
- 
  
 
-}
+  println(a);
+
+ 
+
 }
