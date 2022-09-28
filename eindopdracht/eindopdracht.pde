@@ -17,8 +17,9 @@ Textfield tekstveld1;
 
 
 void setup(){
-   pc= new ControlP5(this);
-   background(255,255,255);
+  
+  pc= new ControlP5(this);
+  background(255,255,255);
   size(900,1000);
 
 knop1=pc.addButton("Knop1")
@@ -69,30 +70,13 @@ fill(255,150,60);
 fill(0,0,0);
 textSize(30);
 text("Boodschappenlijst",310,40);
-
-  }
- 
-
-
-     
-
 }
+ }
 
 
 void draw(){
   
 frameRate(60);
-
-// //titel
-//fill(0,0,0);
-//textSize(30);
-//text("Boodschappenlijst",310,40);
-
-  
-  
-
-
-     
 }
  
 
@@ -105,10 +89,10 @@ void Knop1(){
  a=tekstveld1.getText();
  spullen[c]=a;
   c++;
- 
+
 if(c>=1){
 for(int i=0; i<spullen.length; i++){
-  
+
   if(spullen[i]!= null){
   
   
@@ -116,11 +100,15 @@ for(int i=0; i<spullen.length; i++){
 fill(255,255,255);
 textSize(30);
  text(spullen[i],300,160.1+i*40);
- 
- }
- }
 }
-}
+ }
+  }
+   }
+
+
+
+
+
 void Knop2(){
 stroke(255,150,60);
 fill(255,150,60);
@@ -129,17 +117,6 @@ rect(280,130,400,750);
 
 for(int i =0; i <spullen.length; i++){
   spullen[i]= " ";
-  c=0;
-  
-  
-
-  
-  
-
-
-
+  c=0;  
 }
-
-
- 
-}
+ }
