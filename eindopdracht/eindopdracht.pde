@@ -43,11 +43,13 @@ knop1=pc.addButton("Knop1")
             .addTextfield("TekstInpu1 ")
             .setPosition(300,50)
             .setText(" ")
-            .setCaptionLabel("")
-            .setColorLabel(color(255,0,0))
+            .setCaptionLabel("Vul je boodschappen in!!")
+            .setColorLabel(color(100,100,100))
             .setSize(250,50)
-            .setColorBackground(color(0,255,255));
+            .setColorBackground(color(50,80,255));
             noFill();
+
+
 
 
 fill(255,150,60);
@@ -62,6 +64,12 @@ fill(255,150,60);
   ellipse(240,i*40+150,20,20);
   
  noFill();
+ 
+  //titel
+fill(0,0,0);
+textSize(30);
+text("Boodschappenlijst",310,40);
+
   }
  
 
@@ -75,10 +83,10 @@ void draw(){
   
 frameRate(60);
 
- //titel
-fill(255,255,255);
-textSize(30);
-text("Boodschappenlijst",300,40);
+// //titel
+//fill(0,0,0);
+//textSize(30);
+//text("Boodschappenlijst",310,40);
 
   
   
