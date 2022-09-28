@@ -16,29 +16,12 @@ Textfield tekstveld1;
 
 
 
-
 void setup(){
-  pc= new ControlP5(this);
+   pc= new ControlP5(this);
+   background(255,255,255);
   size(900,1000);
-  background(250,250,250);
-  
 
- 
- fill(200,200,200);
- strokeWeight(4);
- rect(200,5,500,900,40);
- line(200,120,700,120);
- noFill();
- 
- //titel
-fill(1,0,0);
-textSize(30);
-text("Boodschappenlijst",300,40);
-
-  
-  
- 
- knop1=pc.addButton("Knop1")
+knop1=pc.addButton("Knop1")
        .setCaptionLabel("+")
        .setPosition(570,50)
        .setSize(50,50)
@@ -57,7 +40,7 @@ text("Boodschappenlijst",300,40);
   
   //tekstveld
   tekstveld1=pc
-            .addTextfield("TekstInput1 ")
+            .addTextfield("TekstInpu1 ")
             .setPosition(300,50)
             .setText(" ")
             .setCaptionLabel("")
@@ -67,65 +50,88 @@ text("Boodschappenlijst",300,40);
             noFill();
 
 
-for(int i=0; i<rondjes;i++){
-  fill(0,0,0);
+fill(255,150,60);
+ strokeWeight(4);
+ stroke(42,104,162);
+ rect(200,5,500,900,40);
+ line(200,120,700,120);
+ noFill();
+ 
+  for(int i=0; i<rondjes;i++){
+  fill(241,211,2);
   ellipse(240,i*40+150,20,20);
   
  noFill();
-
-
+  }
+ 
 
 
      
 
 }
-}
+
 
 void draw(){
+  
+frameRate(60);
 
+ //titel
+fill(255,255,255);
+textSize(30);
+text("Boodschappenlijst",300,40);
+
+  
+  
+
+
+     
+}
  
 
 
-
-}
 
 
 void Knop1(){
   
   
-  a=tekstveld1.getText();
-  spullen[c]=a;
+ a=tekstveld1.getText();
+ spullen[c]=a;
   c++;
  
 if(c>=1){
- for(int i=0; i<spullen.length; i++){
+for(int i=0; i<spullen.length; i++){
+  
+  if(spullen[i]!= null){
   
   
-fill(0,0,0);
+  
+fill(255,255,255);
 textSize(30);
- text(spullen[i],300,160+i*40);
+ text(spullen[i],300,160.1+i*40);
  
+ }
  }
 }
 }
-
 void Knop2(){
-stroke(200,200,200);
-fill(200,200,200);
-rect(280,130,400,700);
+stroke(255,150,60);
+fill(255,150,60);
+rect(280,130,400,750);
 
 
+for(int i =0; i <spullen.length; i++){
+  spullen[i]= " ";
+  c=0;
+  
+  
+
+  
+  
 
 
 
 }
- 
- 
- 
- 
+
 
  
- 
- 
- 
- 
+}
