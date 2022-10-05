@@ -90,15 +90,8 @@ void Knop1() {
   text=tekstveld1.getText();
   spullen[worden]=text;
   worden++;
-  
-  if(worden>=19){
-    worden=0;
-   
-  
-  }
     
-
-  if (worden>=1) {
+    if (worden>=1) {
     for (int i=0; i< spullen.length; i++) {
 
       if (spullen[i]!= null) {
@@ -108,6 +101,14 @@ void Knop1() {
       }
     }
   }
+  if(worden>=19){
+   worden=0;
+   
+  
+  }
+    
+
+
 }
 
 
@@ -117,7 +118,7 @@ void Knop1() {
 void Knop2() {
   stroke(255, 150, 60);
   fill(255, 150, 60);
-  rect(280, 130, 400, 750);
+  rect(285, 130, 400, 750);
 
 
   for (int i =0; i <spullen.length; i++) {
